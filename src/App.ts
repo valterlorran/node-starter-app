@@ -14,7 +14,7 @@ app.register(
 );
 
 (async ()=>{
-    app.registerProviders(await import('configs/providers') as any)
+    app.registerProviders((await import('configs/providers')).default)
 
     app.start();
 })();

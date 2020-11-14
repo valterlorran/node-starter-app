@@ -1,5 +1,6 @@
-import { Router } from "router-ex";
+import Router from "router-ex/dist/libs/Router";
+import IndexController from "app/Http/Controllers/IndexController";
 
-export default (router: typeof Router) => {
-
+export default (router: Router) => {
+    router.get('/index', [IndexController, 'index'])
 }
