@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch 'src/' --exec 'ts-node -r tsconfig-paths/register src/App.ts' -e ts"
+    "dev": "nodemon --watch 'src/' --exec 'ts-node -r tsconfig-paths/register src/Index.ts' -e ts"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "typescript": "^4.0.5"
   },
   "dependencies": {
+    "node-multithreading": "file:~/Documents/dev/npm/node-multithreading",
     "router-ex": "file:~/Documents/dev/npm/router-ex"
   }
 }

@@ -2,12 +2,12 @@ import { HttpApp } from "router-ex";
 import TestMiddleware from "./Middlewares/TesteMiddleware";
 
 export default class HttpServer extends HttpApp {
-    protected middleware = [];
+    protected middleware = [
+        TestMiddleware
+    ];
 
     protected middlewareGroups = {
-        'web': [
-            TestMiddleware
-        ],
+        'web': [],
         'api': []
     }
 
